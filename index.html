@@ -1,7 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .description {
+            background: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            border: #ccc 1px solid;
+        }
+        .photos {
+            margin-top: 10px;
+        }
+        .photos img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Beautiful Family Home for Sale</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="description">
+            <h2>Property Description</h2>
+            <p>This stunning family home offers 4 spacious bedrooms, 3 bathrooms, a modern kitchen, and a large backyard perfect for entertaining. Located in a quiet, friendly neighborhood, this home is close to schools, parks, and shopping centers. Don't miss out on this incredible opportunity!</p>
+        </div>
+        
+        <div class="photos">
+            <h2>Photos</h2>
+            <img src="photo1.jpg" alt="Front view of the house">
+            <img src="photo2.jpg" alt="Living room">
+            <img src="photo3.jpg" alt="Kitchen">
+            <img src="photo4.jpg" alt="Backyard">
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact us at: (555) 123-4567 | email@example.com</p>
+    </footer>
 </body>
 </html>
