@@ -7,59 +7,49 @@
     <style>
         body {
             font-family: Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #252926;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 10px;
         }
         .header-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 150px;
+            margin-bottom: 150px;
         }
         header {
             background: #252926;
             color: #fff;
             font-size: 3vw;
             border: 5px solid #d19741;
-            padding: 0;
-            font-weight: normal;
         }
         header h1 {
             margin: 0;
             padding: 10px 20px;
             font-weight: normal;
         }
-        .photos {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .photos img {
-            width: 45%;
-            height: auto;
-            margin: 2.5%;
+        .photos img{
+            width: 1920px;
+            height: 1080px;
         }
         .properties {
             color: #fff;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             margin-top: 20px;
         }
         .property {
             padding: 15px;
             margin: 10px;
-            width: 30%;
+            width: 25%;
             box-sizing: border-box;
             text-align: center;
             font-size: 1vw;
         }
         .property-link {
-            display: block;
             text-decoration: none;
             color: inherit;
         }
@@ -78,63 +68,75 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
-        @media (min-width: 600px) {
-            .property {
-                width: 45%;
+
+        @media (max-width: 600px) {
+            .container {
+               scale: 30%;
+               margin-top: -100px;
+            }
+            .header-container {
+                display: flex;
+                justify-content: center;
+                margin-top: -200px;
+                margin-bottom: -10px;
+            }
+            .property{
+                width: 100%;
+                font-size: 4vw;
             }
         }
 
-        @media (min-width: 900px) {
-            .property {
+        @media (max-width: 1000px){
+            .container {
+               scale: 60%;
+               margin-top: -100px;
+            }
+            .header-container {
+                display: flex;
+                justify-content: center;
+                margin-top: -100px;
+                margin-bottom: -10px;
+            }
+            .property{
                 width: 30%;
+                font-size: 2vw;
             }
         }
+
+
     </style>
 </head>
+
 <body>
     <div class="container">
         <photos>
-            <img src="providence2911.jpg" alt="Providence 2911"
-            style="width: 1920px;
-            height: 1080px;"/>    
+            <img src="images/providence2911.jpg" alt="Providence 2911">
         </photos>
-        
-        <div class="header-container">
-            <header>
-                <h1>PROPERTIES FOR SALE</h1>
-            </header>
-        </div>
+    </div>
+    
+    <div class="header-container">
+        <header>
+            <h1>PROPERTIES FOR SALE</h1>
+        </header>
+    </div>
 
-        <div class="properties">
+    <div class="properties">
 
-            <div class="property">
-                <a href="901norrislanephotos.html" class="property-link">
-                    <img src="901norrislane.jpg" alt="901 Norris Lane">
-                    <p>901 Norris Lane<br>
-                        <br>West Monroe, LA 71291<br>
-                        <br>$255,000.00<br>
-                        1,606 Square Feet<br>
-                        3 Bedroom / 2 Bath<br>
-                        Large Fenced Back Yard<br>
-                        Plus<br>
-                        800 Sq Ft Guest House with<br>
-                        1 Bedroom / 1 Bathroom / Kitchen & Living<br>
-                    </p>
-                </a>
-            </div>
-
-            <div class="property">
-                
-            </div>
-
-            <div class="property">
-                
-            </div>
-
+        <div class="property">
+            <a href="901norrislanephotos.html" class="property-link">
+                <img src="images/901norrislane/901norrislane.jpg" alt="901 Norris Lane">
+                <p>901 Norris Lane<br>
+                    <br>West Monroe, LA 71291<br>
+                    <br>- $255,000.00<br>
+                    - 1,606 Square Feet<br>
+                    - 3 Bedroom / 2 Bath<br>
+                    - Large Fenced Back Yard<br>
+                    Plus<br>
+                    - 800 Sq Ft Guest House with<br>
+                    1 Bedroom / 1 Bathroom / Kitchen & Living<br>
+                </p>
+            </a>
         </div>
 
     </div>

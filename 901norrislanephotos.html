@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,50 +63,42 @@
       margin: 0;
       color: #fff;
     }
-    @media (max-width: 768px) {
-        .container {
-            width: 95%;
-            padding: 5px;
-        }
 
-        .nav-button {
-            padding: 6px 10px; 
-            font-size: 16px; 
-        }
-    }
+    @media (max-width: 600px) {
+            .container {
+               scale: 100%;
+            }
+            .gallery{
+              padding-top: 100px;
+              max-width: 100%;
+            }
 
-    @media (max-width: 480px) {
-        .gallery {
-            max-height: 70vh; 
         }
-
-        .nav-button {
-            padding: 5px 8px; 
-            font-size: 14px; 
-        }
-    }
+        
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="header">
       <h1>901 Norris Lane Photo Gallery</h1>
     </div>
     <div class="gallery">
-        <img src="front_ext.jpg" alt="Front Exterior">
-        <img src="garage.jpg" alt="Garage">
-        <img src="kitchen1.jpg" alt="Kitchen Wide">
-        <img src="kitchen2.jpg" alt="Kitchen Medium">
-        <img src="kitchen3.jpg" alt="Kitchen Stove">
-        <img src="living.jpg" alt="Living Room">
-        <img src="bed1-1.jpg" alt="Bedroom 1">
-        <img src="bed2-1.jpg" alt="Bedroom 2">
-        <img src="bed3-1.jpg" alt="Bedroom 3">
-        <img src="bath1-1.jpg" alt="Bathroom 1">
-        <img src="bath1-2.jpg" alt="Bathroom 1 Shower">
-        <img src="bath2-1.jpg" alt="Bathroom 2">
-        <img src="bath2-2.jpg" alt="Bathroom 2 Bathtub">
-        <img src="guest_kitchen.jpg" alt="Guesthouse Kitchen">
+        <img src="images/901norrislane/front_ext.jpg" alt="Front Exterior">
+        <img src="images/901norrislane/garage.jpg" alt="Garage">
+        <img src="images/901norrislane/kitchen1.jpg" alt="Kitchen Wide">
+        <img src="images/901norrislane/kitchen2.jpg" alt="Kitchen Medium">
+        <img src="images/901norrislane/kitchen3.jpg" alt="Kitchen Stove">
+        <img src="images/901norrislane/living.jpg" alt="Living Room">
+        <img src="images/901norrislane/bed1-1.jpg" alt="Bedroom 1">
+        <img src="images/901norrislane/bed2-1.jpg" alt="Bedroom 2">
+        <img src="images/901norrislane/bed3-1.jpg" alt="Bedroom 3">
+        <img src="images/901norrislane/bath1-1.jpg" alt="Bathroom 1">
+        <img src="images/901norrislane/bath1-2.jpg" alt="Bathroom 1 Shower">
+        <img src="images/901norrislane/bath2-1.jpg" alt="Bathroom 2">
+        <img src="images/901norrislane/bath2-2.jpg" alt="Bathroom 2 Bathtub">
+        <img src="images/901norrislane/backyard.jpg" alt="Backyard">
+        <img src="images/901norrislane/guest_kitchen.jpg" alt="Guesthouse Kitchen">
       <button class="nav-button left" onclick="prevPhoto()">&#10094;</button>
       <button class="nav-button right" onclick="nextPhoto()">&#10095;</button>
     </div>
